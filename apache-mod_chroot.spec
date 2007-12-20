@@ -20,6 +20,7 @@ Requires(pre):	apache >= 2.2.0
 Requires:	apache-conf >= 2.2.0
 Requires:	apache >= 2.2.0
 BuildRequires:	apache-devel >= 2.2.0
+BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}-buildroot
 
 %description
 mod_chroot makes running Apache in a secure chroot environment easy. You don't
