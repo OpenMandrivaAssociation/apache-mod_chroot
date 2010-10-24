@@ -6,7 +6,7 @@
 Summary:	Mod_chroot makes running Apache in a secure chroot environment easy
 Name:		apache-%{mod_name}
 Version:	0.5
-Release:	%mkrel 9
+Release:	%mkrel 10
 Group:		System/Servers
 License:	GPL
 URL:		http://core.segfault.pl/~hobbit/mod_chroot/
