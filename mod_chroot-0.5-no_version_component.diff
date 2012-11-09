@@ -1,0 +1,18 @@
+--- src/apache20/mod_chroot.c	2005-06-13 10:22:38.000000000 +0200
++++ src/apache20/mod_chroot.c.oden	2006-08-03 22:52:24.000000000 +0200
+@@ -8,7 +8,6 @@
+ #include "apr.h"
+ #include "apr_pools.h"
+ 
+-#define MODULE_SIGNATURE "mod_chroot/0.5"
+ module AP_MODULE_DECLARE_DATA chroot_module;
+ 
+ typedef struct {
+@@ -57,7 +56,6 @@
+ static int chroot_init(apr_pool_t *p, apr_pool_t *plog, apr_pool_t *ptemp, server_rec *s) {
+ chroot_srv_config *cfg = (chroot_srv_config *)ap_get_module_config(s->module_config, &chroot_module);
+ 
+-	ap_add_version_component(p, MODULE_SIGNATURE);
+ 	if(cfg->chroot_dir==NULL) return OK;
+ 	if(chroot_init_now(s)==1) {
+ 		if(chroot(cfg->chroot_dir)<0) {
