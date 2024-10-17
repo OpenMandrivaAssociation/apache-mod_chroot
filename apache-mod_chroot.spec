@@ -9,7 +9,7 @@ Version:	0.5
 Release:	13
 Group:		System/Servers
 License:	GPL
-URL:		http://core.segfault.pl/~hobbit/mod_chroot/
+URL:		https://core.segfault.pl/~hobbit/mod_chroot/
 Source0:	http://core.segfault.pl/~hobbit/mod_chroot/dist/%{mod_name}-%{version}.tar.bz2
 Source1:	%{mod_conf}.bz2
 Patch0:		mod_chroot-0.5-no_version_component.diff
